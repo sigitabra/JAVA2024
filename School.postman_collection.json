@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "1e0dfc2b-75f1-415b-9d6e-78a355e9c00c",
+		"name": "School",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "16978147"
+	},
+	"item": [
+		{
+			"name": "all schools",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "school by ID",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "students by school Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "student by school Id and student Id",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
