@@ -26,12 +26,14 @@ public class SchoolService {
     }
 
     public Student findStudentBySchoolIdAndStudentId(Long schoolId, Long studentId) {
-
-        for (Student student : findAllStudentsBySchoolId(schoolId)) {
-            if (student.getId().equals(studentId)) {
-                return student;
-            }
+        List<Student> students = findAllStudentsBySchoolId(schoolId);
+        Student tempStudent = new Student(studentId);
+        try {
+            return students.get(students.indexOf(tempStudent));
+        } catch (IndexOutOfBoundsException e) {
+            System.out.print("ERROR: There is no student with id " + studentId);
         }
         return null;
+
     }
 }
