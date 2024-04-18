@@ -13,16 +13,16 @@ import java.util.List;
 public class SchoolService {
     private final SchoolRepository schoolRepository;
 
-    public List<School> findAll() {
+    public List<School> findAllSchools() {
         return schoolRepository.findAll();
     }
 
-    public School findById(Long id) {
+    public School findSchoolById(Long id) {
         return schoolRepository.findById(id).orElse(null);
     }
 
     public List<Student> findAllStudentsBySchoolId(Long id) {
-        return findById(id).getStudents();
+        return findSchoolById(id).getStudents();
     }
 
     public Student findStudentBySchoolIdAndStudentId(Long schoolId, Long studentId) {

@@ -17,13 +17,13 @@ public class SchoolController {
     private final SchoolService schoolService;
 
     @GetMapping
-    public List<School> getAll() {
-        return schoolService.findAll();
+    public List<School> getAllSchools() {
+        return schoolService.findAllSchools();
     }
 
     @GetMapping(value = "/{id}")
     public School getSchoolById(@PathVariable Long id) {
-        return this.schoolService.findById(id);
+        return this.schoolService.findSchoolById(id);
     }
 
     @GetMapping(value = "/students/{schoolId}")
@@ -32,7 +32,7 @@ public class SchoolController {
     }
 
     @GetMapping(value = "/{schoolId}/student/{studentId}")
-    public Student getSchoolById(@PathVariable Long schoolId, @PathVariable Long studentId) {
+    public Student getStudentBySchoolIdAndStudentId(@PathVariable Long schoolId, @PathVariable Long studentId) {
         return this.schoolService.findStudentBySchoolIdAndStudentId(schoolId, studentId);
     }
 }

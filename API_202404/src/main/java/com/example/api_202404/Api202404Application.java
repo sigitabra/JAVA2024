@@ -16,6 +16,4 @@ public class Api202404Application {
         SpringApplication.run(Api202404Application.class, args);
     }
 
-
-
 }
