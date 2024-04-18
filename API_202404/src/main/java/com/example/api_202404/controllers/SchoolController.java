@@ -3,14 +3,14 @@ package com.example.api_202404.controllers;
 import com.example.api_202404.entities.School;
 import com.example.api_202404.entities.Student;
 import com.example.api_202404.services.SchoolService;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @CrossOrigin(originPatterns = "*")
 @RestController
-@AllArgsConstructor
+@RequiredArgsConstructor
 @RequestMapping(value = "/schools")
 public class SchoolController {
 

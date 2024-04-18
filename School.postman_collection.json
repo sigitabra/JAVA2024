@@ -14,7 +14,7 @@
 			},
 			"response": [
 				{
-					"name": "New Request",
+					"name": "All schools received",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -65,7 +65,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 18 Apr 2024 15:50:40 GMT"
+							"value": "Thu, 18 Apr 2024 16:22:28 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -89,7 +89,7 @@
 			},
 			"response": [
 				{
-					"name": "New Request",
+					"name": "School by ID found",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -162,7 +162,7 @@
 			},
 			"response": [
 				{
-					"name": "student by school Id and student Id",
+					"name": "students by school Id found",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
@@ -260,12 +260,12 @@
 			},
 			"response": [
 				{
-					"name": "students by school by ID",
+					"name": "student by school Id and student Id found",
 					"originalRequest": {
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8090/schools/:schoolid/student/:sudentid",
+							"raw": "http://localhost:8090/schools/:schoolid/students/:sudentid",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -274,7 +274,7 @@
 							"path": [
 								"schools",
 								":schoolid",
-								"student",
+								"students",
 								":sudentid"
 							],
 							"variable": [
@@ -315,7 +315,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Thu, 18 Apr 2024 15:51:32 GMT"
+							"value": "Thu, 18 Apr 2024 16:25:26 GMT"
 						},
 						{
 							"key": "Keep-Alive",
