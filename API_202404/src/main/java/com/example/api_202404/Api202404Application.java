@@ -16,12 +16,6 @@ public class Api202404Application {
         SpringApplication.run(Api202404Application.class, args);
     }
 
-    @EventListener(ApplicationReadyEvent.class)
-    public void afterRun() {
-        schoolService.findAll().forEach(System.out::println);
-        schoolService.findAllStudentsBySchoolId(1L).forEach(System.out::println);
-        System.out.println(schoolService.findStudentBySchoolIdAndStudentId(1L, 39L));
-    }
 
 
 }

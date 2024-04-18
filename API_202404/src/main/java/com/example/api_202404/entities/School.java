@@ -8,9 +8,6 @@ import java.util.List;
 @Entity
 @Getter
 @Setter
-@AllArgsConstructor
-@NoArgsConstructor
-@ToString
 public class School {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
