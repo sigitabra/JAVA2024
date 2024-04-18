@@ -31,7 +31,7 @@ public class SchoolController {
         return this.schoolService.findAllStudentsBySchoolId(schoolId);
     }
 
-    @GetMapping(value = "/{schoolId}/student/{studentId}")
+    @GetMapping(value = "/{schoolId}/students/{studentId}")
     public Student getStudentBySchoolIdAndStudentId(@PathVariable Long schoolId, @PathVariable Long studentId) {
         return this.schoolService.findStudentBySchoolIdAndStudentId(schoolId, studentId);
     }

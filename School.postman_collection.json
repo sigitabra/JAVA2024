@@ -232,7 +232,31 @@
 			"name": "student by school Id and student Id",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/schools/:schoolid/students/:sudentid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"schools",
+						":schoolid",
+						"students",
+						":sudentid"
+					],
+					"variable": [
+						{
+							"key": "schoolid",
+							"value": "1"
+						},
+						{
+							"key": "sudentid",
+							"value": "39"
+						}
+					]
+				}
 			},
 			"response": [
 				{
