@@ -10,6 +10,7 @@ import java.util.Objects;
 @Getter
 @Setter
 @NoArgsConstructor
+@ToString
 public class Student {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -33,6 +34,14 @@ public class Student {
 
     public Student(Long id) {
         this.id = id;
+    }
+
+    public Student(String firstName, String lastName, Date dateOfBirth, String gender, Long schoolId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.dateOfBirth = dateOfBirth;
+        this.gender = gender;
+        this.schoolId = schoolId;
     }
 
     @Override

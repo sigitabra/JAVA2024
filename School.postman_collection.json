@@ -8,9 +8,32 @@
 	"item": [
 		{
 			"name": "all schools",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/schools",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"schools"
+					]
+				}
 			},
 			"response": [
 				{
@@ -85,7 +108,25 @@
 			"name": "school by ID",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/schools/:schoolid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"schools",
+						":schoolid"
+					],
+					"variable": [
+						{
+							"key": "schoolid",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": [
 				{
@@ -158,7 +199,26 @@
 			"name": "students by school Id",
 			"request": {
 				"method": "GET",
-				"header": []
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/schools/students/:schoolid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"schools",
+						"students",
+						":schoolid"
+					],
+					"variable": [
+						{
+							"key": "schoolid",
+							"value": "1"
+						}
+					]
+				}
 			},
 			"response": [
 				{
@@ -328,6 +388,357 @@
 					],
 					"cookie": [],
 					"body": "{\n    \"id\": 39,\n    \"firstName\": \"Chloe\",\n    \"lastName\": \"Harris\",\n    \"dateOfBirth\": \"2005-02-16\",\n    \"gender\": \"Female\",\n    \"email\": \"student19@example.com\",\n    \"phoneNumber\": \"555-4567\",\n    \"address\": \"753 Birch St\",\n    \"schoolId\": 1\n}"
+				}
+			]
+		},
+		{
+			"name": "add school",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/schools/name/:schoolName/address/:schoolAddress",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"schools",
+						"name",
+						":schoolName",
+						"address",
+						":schoolAddress"
+					],
+					"variable": [
+						{
+							"key": "schoolName",
+							"value": "test Name2"
+						},
+						{
+							"key": "schoolAddress",
+							"value": "Vilnius, Sauletekis2"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Successfully added new school",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/schools/name/:schoolName/address/:schoolAddress",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"schools",
+								"name",
+								":schoolName",
+								"address",
+								":schoolAddress"
+							],
+							"variable": [
+								{
+									"key": "schoolName",
+									"value": "test Name"
+								},
+								{
+									"key": "schoolAddress",
+									"value": "Vilnius, Sauletekis"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "35"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Apr 2024 18:00:24 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "test Name school added successfully"
+				}
+			]
+		},
+		{
+			"name": "add student to school by Id",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/schools/schoolId/:schoolId/firstName/:firstName/lastName/:lastName/dateOfBirth/:dateOfBirth/gender/:gender",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"schools",
+						"schoolId",
+						":schoolId",
+						"firstName",
+						":firstName",
+						"lastName",
+						":lastName",
+						"dateOfBirth",
+						":dateOfBirth",
+						"gender",
+						":gender"
+					],
+					"variable": [
+						{
+							"key": "schoolId",
+							"value": "1"
+						},
+						{
+							"key": "firstName",
+							"value": "naujas"
+						},
+						{
+							"key": "lastName",
+							"value": "studentas"
+						},
+						{
+							"key": "dateOfBirth",
+							"value": "1987-11-08"
+						},
+						{
+							"key": "gender",
+							"value": "moteris"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Successfully added new student to school id=1",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/schools/schoolId/:schoolId/firstName/:firstName/lastName/:lastName/dateOfBirth/:dateOfBirth/gender/:gender",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"schools",
+								"schoolId",
+								":schoolId",
+								"firstName",
+								":firstName",
+								"lastName",
+								":lastName",
+								"dateOfBirth",
+								":dateOfBirth",
+								"gender",
+								":gender"
+							],
+							"variable": [
+								{
+									"key": "schoolId",
+									"value": "1"
+								},
+								{
+									"key": "firstName",
+									"value": "naujas"
+								},
+								{
+									"key": "lastName",
+									"value": "studentas"
+								},
+								{
+									"key": "dateOfBirth",
+									"value": "1987-11-05"
+								},
+								{
+									"key": "gender",
+									"value": "moteris"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "199"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Apr 2024 18:26:28 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "Student(id=null, firstName=naujas, lastName=studentas, dateOfBirth=1987-11-05, gender=moteris, email=null, phoneNumber=null, address=null, schoolId=1)\nSuccessfully added to school Central High School"
+				}
+			]
+		},
+		{
+			"name": "update school name",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/schools/schoolId/:schoolId/newName/:newName",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"schools",
+						"schoolId",
+						":schoolId",
+						"newName",
+						":newName"
+					],
+					"variable": [
+						{
+							"key": "schoolId",
+							"value": "1"
+						},
+						{
+							"key": "newName",
+							"value": "Naujas"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "successfully updated school name",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8090/schools/schoolId/:schoolId/newName/:newName",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"schools",
+								"schoolId",
+								":schoolId",
+								"newName",
+								":newName"
+							],
+							"variable": [
+								{
+									"key": "schoolId",
+									"value": "1"
+								},
+								{
+									"key": "newName",
+									"value": "Naujas"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Vary",
+							"value": "Origin"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Method"
+						},
+						{
+							"key": "Vary",
+							"value": "Access-Control-Request-Headers"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/plain;charset=UTF-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "67"
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 18 Apr 2024 19:12:05 GMT"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=60"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						}
+					],
+					"cookie": [],
+					"body": "School name: Naujas pavadinimas successfully updated to name Naujas"
 				}
 			]
 		}
