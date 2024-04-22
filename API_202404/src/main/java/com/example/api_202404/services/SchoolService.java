@@ -1,5 +1,8 @@
 package com.example.api_202404.services;
 
+import com.example.api_202404.converters.SchoolConverter;
+import com.example.api_202404.converters.StudentConverter;
+import com.example.api_202404.dto.SchoolDTOIncoming;
 import com.example.api_202404.entities.School;
 import com.example.api_202404.entities.Student;
 import com.example.api_202404.repositories.SchoolRepository;
@@ -20,6 +23,7 @@ public class SchoolService {
     }
 
     public School findSchoolById(Long id) {
+
         return schoolRepository.findById(id).orElse(null);
     }
 
@@ -39,38 +43,36 @@ public class SchoolService {
 
     }
 
-    public String addSchool(String name, String address) {
-        School school = new School(name, address);
+    public School addSchool(School school) {
         try {
             schoolRepository.saveAndFlush(school);
-            return school.getName() + " school added successfully";
         } catch (Exception e) {
-            return school.getName() + " school was not added";
+            System.out.println("ERROR: "+school.getName() + " school was not added");
         }
+        return school;
     }
 
-    public String addStudentToSchoolbyId(Long schoolId, String firstName, String lastName, Date dateOfBirth, String gender) {
-        Student student = new Student(firstName, lastName, dateOfBirth, gender, schoolId);
+    public Student addStudentToSchoolbyId(Long schoolId, Student student) {
         try {
             School school = findSchoolById(schoolId);
             school.getStudents().add(student);
             schoolRepository.saveAndFlush(school);
-            return student + "\nSuccessfully added to school " + school.getName();
         } catch (Exception e) {
-            return "Failed to add " + student;
+            System.out.println("Failed to add " + student);
         }
+        return student;
     }
 
-    public String updateSchoolNameById(Long schoolId, String newName) {
-
+    public School updateSchoolNameById(Long schoolId, String newName) {
+        School school = null;
         try {
-            School school = findSchoolById(schoolId);
+            school = findSchoolById(schoolId);
             String odlName = school.getName();
             school.setName(newName);
             schoolRepository.saveAndFlush(school);
-            return "School name: "+ odlName + " successfully updated to name " + school.getName();
         } catch (Exception e) {
-            return "Failed to update school name";
+            System.out.println("Failed to update school name");
         }
+        return school;
     }
 }
