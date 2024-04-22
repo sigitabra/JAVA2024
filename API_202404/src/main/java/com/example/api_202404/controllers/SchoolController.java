@@ -51,11 +51,11 @@ public class SchoolController {
 
     @PostMapping(value = "/schoolId/{schoolId}")
     public String addStudentToSchoolbyId(@PathVariable Long schoolId, @RequestBody StudentDTOIncoming studentDTOIncoming) {
-        return "New student added to school "+ SchoolConverter.convertEntityToDTO(schoolService.findSchoolById(schoolId)).getName()+"\n" +StudentConverter.convertEntityToDTO(this.schoolService.addStudentToSchoolbyId(schoolId, StudentConverter.convertDTOtoEntity(studentDTOIncoming)));
+        return "New student added to school " + SchoolConverter.convertEntityToDTO(schoolService.findSchoolById(schoolId)).getName() + "\n" + StudentConverter.convertEntityToDTO(this.schoolService.addStudentToSchoolbyId(schoolId, StudentConverter.convertDTOtoEntity(studentDTOIncoming)));
     }
 
     @PatchMapping(value = "/schoolId/{schoolId}")
     public String updateSchoolNameById(@PathVariable Long schoolId, @RequestBody String newName) {
-        return SchoolConverter.convertEntityToDTO(schoolService.findSchoolById(schoolId)).getName()+ " school name updated to: "+ SchoolConverter.convertEntityToDTO(this.schoolService.updateSchoolNameById(schoolId, newName)).getName();
+        return SchoolConverter.convertEntityToDTO(schoolService.findSchoolById(schoolId)).getName() + " school name updated to: " + SchoolConverter.convertEntityToDTO(this.schoolService.updateSchoolNameById(schoolId, newName)).getName();
     }
 }

@@ -1,16 +1,12 @@
 package com.example.api_202404.services;
 
-import com.example.api_202404.converters.SchoolConverter;
-import com.example.api_202404.converters.StudentConverter;
-import com.example.api_202404.dto.SchoolDTOIncoming;
 import com.example.api_202404.entities.School;
 import com.example.api_202404.entities.Student;
 import com.example.api_202404.repositories.SchoolRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
-import java.sql.Date;
-import java.util.ArrayList;
+
 import java.util.List;
 
 @Service
@@ -47,7 +43,7 @@ public class SchoolService {
         try {
             schoolRepository.saveAndFlush(school);
         } catch (Exception e) {
-            System.out.println("ERROR: "+school.getName() + " school was not added");
+            System.out.println("ERROR: " + school.getName() + " school was not added");
         }
         return school;
     }
