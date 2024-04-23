@@ -88,7 +88,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 22 Apr 2024 19:05:51 GMT"
+							"value": "Tue, 23 Apr 2024 16:05:22 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -100,7 +100,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"XYZ\",\n        \"address\": \"123 Main St\",\n        \"students\": [\n            {\n                \"id\": 21,\n                \"firstName\": \"Doe\",\n                \"lastName\": \"Doe\",\n                \"dateOfBirth\": \"2005-03-12\",\n                \"gender\": \"Male\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 24,\n                \"firstName\": \"Williams\",\n                \"lastName\": \"Williams\",\n                \"dateOfBirth\": \"2003-09-15\",\n                \"gender\": \"Female\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 27,\n                \"firstName\": \"Garcia\",\n                \"lastName\": \"Garcia\",\n                \"dateOfBirth\": \"2006-08-22\",\n                \"gender\": \"Female\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 30,\n                \"firstName\": \"Lopez\",\n                \"lastName\": \"Lopez\",\n                \"dateOfBirth\": \"2004-06-28\",\n                \"gender\": \"Male\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 33,\n                \"firstName\": \"Anderson\",\n                \"lastName\": \"Anderson\",\n                \"dateOfBirth\": \"2006-09-18\",\n                \"gender\": \"Female\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 36,\n                \"firstName\": \"Moore\",\n                \"lastName\": \"Moore\",\n                \"dateOfBirth\": \"2005-12-09\",\n                \"gender\": \"Male\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 39,\n                \"firstName\": \"Harris\",\n                \"lastName\": \"Harris\",\n                \"dateOfBirth\": \"2005-02-16\",\n                \"gender\": \"Female\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 41,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 42,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 43,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 44,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 45,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 46,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 47,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-08\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 48,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-08\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 49,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-08\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 50,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-08\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 51,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-08\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 52,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 53,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-08\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 54,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 55,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-08\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            },\n            {\n                \"id\": 56,\n                \"firstName\": \"studentas\",\n                \"lastName\": \"studentas\",\n                \"dateOfBirth\": \"1987-11-05\",\n                \"gender\": \"moteris\",\n                \"schoolId\": 1\n            }\n        ]\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Westside Elementary School\",\n        \"address\": \"456 Elm St\",\n        \"students\": [\n            {\n                \"id\": 22,\n                \"firstName\": \"Smith\",\n                \"lastName\": \"Smith\",\n                \"dateOfBirth\": \"2006-05-20\",\n                \"gender\": \"Female\",\n                \"schoolId\": 2\n            },\n            {\n                \"id\": 25,\n                \"firstName\": \"Brown\",\n                \"lastName\": \"Brown\",\n                \"dateOfBirth\": \"2005-07-30\",\n                \"gender\": \"Male\",\n                \"schoolId\": 2\n            },\n            {\n                \"id\": 28,\n                \"firstName\": \"Martinez\",\n                \"lastName\": \"Martinez\",\n                \"dateOfBirth\": \"2003-12-05\",\n                \"gender\": \"Male\",\n                \"schoolId\": 2\n            },\n            {\n                \"id\": 31,\n                \"firstName\": \"Gonzalez\",\n                \"lastName\": \"Gonzalez\",\n                \"dateOfBirth\": \"2003-04-14\",\n                \"gender\": \"Female\",\n                \"schoolId\": 2\n            },\n            {\n                \"id\": 34,\n                \"firstName\": \"Taylor\",\n                \"lastName\": \"Taylor\",\n                \"dateOfBirth\": \"2004-07-11\",\n                \"gender\": \"Male\",\n                \"schoolId\": 2\n            },\n            {\n                \"id\": 37,\n                \"firstName\": \"Jackson\",\n                \"lastName\": \"Jackson\",\n                \"dateOfBirth\": \"2004-08-14\",\n                \"gender\": \"Female\",\n                \"schoolId\": 2\n            },\n            {\n                \"id\": 40,\n                \"firstName\": \"Martin\",\n                \"lastName\": \"Martin\",\n                \"dateOfBirth\": \"2004-10-23\",\n                \"gender\": \"Male\",\n                \"schoolId\": 2\n            }\n        ]\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Eastwood Middle School\",\n        \"address\": \"789 Oak St\",\n        \"students\": [\n            {\n                \"id\": 23,\n                \"firstName\": \"Johnson\",\n                \"lastName\": \"Johnson\",\n                \"dateOfBirth\": \"2004-11-08\",\n                \"gender\": \"Male\",\n                \"schoolId\": 3\n            },\n            {\n                \"id\": 26,\n                \"firstName\": \"Jones\",\n                \"lastName\": \"Jones\",\n                \"dateOfBirth\": \"2004-02-18\",\n                \"gender\": \"Female\",\n                \"schoolId\": 3\n            },\n            {\n                \"id\": 29,\n                \"firstName\": \"Hernandez\",\n                \"lastName\": \"Hernandez\",\n                \"dateOfBirth\": \"2005-10-10\",\n                \"gender\": \"Female\",\n                \"schoolId\": 3\n            },\n            {\n                \"id\": 32,\n                \"firstName\": \"Wilson\",\n                \"lastName\": \"Wilson\",\n                \"dateOfBirth\": \"2005-01-02\",\n                \"gender\": \"Male\",\n                \"schoolId\": 3\n            },\n            {\n                \"id\": 35,\n                \"firstName\": \"Thomas\",\n                \"lastName\": \"Thomas\",\n                \"dateOfBirth\": \"2003-03-25\",\n                \"gender\": \"Female\",\n                \"schoolId\": 3\n            },\n            {\n                \"id\": 38,\n                \"firstName\": \"White\",\n                \"lastName\": \"White\",\n                \"dateOfBirth\": \"2003-05-30\",\n                \"gender\": \"Male\",\n                \"schoolId\": 3\n            }\n        ]\n    },\n    {\n        \"id\": 4,\n        \"name\": \"test Name\",\n        \"address\": \"Vilnius, Sauletekis\",\n        \"students\": null\n    },\n    {\n        \"id\": 5,\n        \"name\": \"test Name2\",\n        \"address\": \"Vilnius, Sauletekis2\",\n        \"students\": null\n    },\n    {\n        \"id\": 6,\n        \"name\": \"test Name\",\n        \"address\": \"Vilnius, Sauletekis\",\n        \"students\": null\n    },\n    {\n        \"id\": 7,\n        \"name\": \"test Name\",\n        \"address\": \"Vilnius, Sauletekis\",\n        \"students\": null\n    },\n    {\n        \"id\": 8,\n        \"name\": \"new name\",\n        \"address\": \"123 Main St\",\n        \"students\": null\n    },\n    {\n        \"id\": 9,\n        \"name\": \"new name\",\n        \"address\": \"123 Main St\",\n        \"students\": null\n    },\n    {\n        \"id\": 10,\n        \"name\": \"new school add\",\n        \"address\": \"123 Main St\",\n        \"students\": null\n    },\n    {\n        \"id\": 11,\n        \"name\": \"new school add\",\n        \"address\": \"123 Main St\",\n        \"students\": null\n    }\n]"
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"DTO naujas vardas3\",\n        \"address\": \"123 Main St\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Westside Elementary School\",\n        \"address\": \"456 Elm St\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Eastwood Middle School\",\n        \"address\": \"789 Oak St\"\n    },\n    {\n        \"id\": 4,\n        \"name\": \"test Name\",\n        \"address\": \"Vilnius, Sauletekis\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"test Name2\",\n        \"address\": \"Vilnius, Sauletekis2\"\n    },\n    {\n        \"id\": 6,\n        \"name\": \"test Name\",\n        \"address\": \"Vilnius, Sauletekis\"\n    },\n    {\n        \"id\": 7,\n        \"name\": \"test Name\",\n        \"address\": \"Vilnius, Sauletekis\"\n    },\n    {\n        \"id\": 8,\n        \"name\": \"new name\",\n        \"address\": \"123 Main St\"\n    },\n    {\n        \"id\": 9,\n        \"name\": \"new name\",\n        \"address\": \"123 Main St\"\n    },\n    {\n        \"id\": 10,\n        \"name\": \"new school add\",\n        \"address\": \"123 Main St\"\n    },\n    {\n        \"id\": 11,\n        \"name\": \"new school add\",\n        \"address\": \"123 Main St\"\n    },\n    {\n        \"id\": 12,\n        \"name\": \"One more new school add\",\n        \"address\": \"laimes gatve, Vilnius\"\n    },\n    {\n        \"id\": 13,\n        \"name\": \"Second new school added\",\n        \"address\": \"Dziaugsmo gatve, Vilnius\"\n    }\n]"
 				}
 			]
 		},
@@ -179,7 +179,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 22 Apr 2024 19:06:01 GMT"
+							"value": "Tue, 23 Apr 2024 16:04:51 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -191,7 +191,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "{\n    \"id\": 1,\n    \"name\": \"XYZ\",\n    \"address\": \"123 Main St\",\n    \"students\": [\n        {\n            \"id\": 21,\n            \"firstName\": \"Doe\",\n            \"lastName\": \"Doe\",\n            \"dateOfBirth\": \"2005-03-12\",\n            \"gender\": \"Male\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 24,\n            \"firstName\": \"Williams\",\n            \"lastName\": \"Williams\",\n            \"dateOfBirth\": \"2003-09-15\",\n            \"gender\": \"Female\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 27,\n            \"firstName\": \"Garcia\",\n            \"lastName\": \"Garcia\",\n            \"dateOfBirth\": \"2006-08-22\",\n            \"gender\": \"Female\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 30,\n            \"firstName\": \"Lopez\",\n            \"lastName\": \"Lopez\",\n            \"dateOfBirth\": \"2004-06-28\",\n            \"gender\": \"Male\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 33,\n            \"firstName\": \"Anderson\",\n            \"lastName\": \"Anderson\",\n            \"dateOfBirth\": \"2006-09-18\",\n            \"gender\": \"Female\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 36,\n            \"firstName\": \"Moore\",\n            \"lastName\": \"Moore\",\n            \"dateOfBirth\": \"2005-12-09\",\n            \"gender\": \"Male\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 39,\n            \"firstName\": \"Harris\",\n            \"lastName\": \"Harris\",\n            \"dateOfBirth\": \"2005-02-16\",\n            \"gender\": \"Female\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 41,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 42,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 43,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 44,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 45,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 46,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 47,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-08\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 48,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-08\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 49,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-08\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 50,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-08\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 51,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-08\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 52,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 53,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-08\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 54,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 55,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-08\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        },\n        {\n            \"id\": 56,\n            \"firstName\": \"studentas\",\n            \"lastName\": \"studentas\",\n            \"dateOfBirth\": \"1987-11-05\",\n            \"gender\": \"moteris\",\n            \"schoolId\": 1\n        }\n    ]\n}"
+					"body": "{\n    \"id\": 1,\n    \"name\": \"DTO naujas vardas3\",\n    \"address\": \"123 Main St\"\n}"
 				}
 			]
 		},
@@ -227,7 +227,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8090/schools/students/:schoolid",
+							"raw": "http://localhost:8090/schools/:schoolid/students",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -235,8 +235,8 @@
 							"port": "8090",
 							"path": [
 								"schools",
-								"students",
-								":schoolid"
+								":schoolid",
+								"students"
 							],
 							"variable": [
 								{
@@ -272,7 +272,7 @@
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 22 Apr 2024 19:06:08 GMT"
+							"value": "Tue, 23 Apr 2024 16:06:28 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -284,7 +284,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "[\n    {\n        \"id\": 21,\n        \"firstName\": \"Doe\",\n        \"lastName\": \"Doe\",\n        \"dateOfBirth\": \"2005-03-12\",\n        \"gender\": \"Male\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 24,\n        \"firstName\": \"Williams\",\n        \"lastName\": \"Williams\",\n        \"dateOfBirth\": \"2003-09-15\",\n        \"gender\": \"Female\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 27,\n        \"firstName\": \"Garcia\",\n        \"lastName\": \"Garcia\",\n        \"dateOfBirth\": \"2006-08-22\",\n        \"gender\": \"Female\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 30,\n        \"firstName\": \"Lopez\",\n        \"lastName\": \"Lopez\",\n        \"dateOfBirth\": \"2004-06-28\",\n        \"gender\": \"Male\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 33,\n        \"firstName\": \"Anderson\",\n        \"lastName\": \"Anderson\",\n        \"dateOfBirth\": \"2006-09-18\",\n        \"gender\": \"Female\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 36,\n        \"firstName\": \"Moore\",\n        \"lastName\": \"Moore\",\n        \"dateOfBirth\": \"2005-12-09\",\n        \"gender\": \"Male\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 39,\n        \"firstName\": \"Harris\",\n        \"lastName\": \"Harris\",\n        \"dateOfBirth\": \"2005-02-16\",\n        \"gender\": \"Female\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 41,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 42,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 43,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 44,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 45,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 46,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 47,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 48,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 49,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 50,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 51,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 52,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 53,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 54,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 55,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 56,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    }\n]"
+					"body": "[\n    {\n        \"id\": 21,\n        \"firstName\": \"Doe\",\n        \"lastName\": \"Doe\",\n        \"dateOfBirth\": \"2005-03-12\",\n        \"gender\": \"Male\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 24,\n        \"firstName\": \"Williams\",\n        \"lastName\": \"Williams\",\n        \"dateOfBirth\": \"2003-09-15\",\n        \"gender\": \"Female\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 27,\n        \"firstName\": \"Garcia\",\n        \"lastName\": \"Garcia\",\n        \"dateOfBirth\": \"2006-08-22\",\n        \"gender\": \"Female\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 30,\n        \"firstName\": \"Lopez\",\n        \"lastName\": \"Lopez\",\n        \"dateOfBirth\": \"2004-06-28\",\n        \"gender\": \"Male\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 33,\n        \"firstName\": \"Anderson\",\n        \"lastName\": \"Anderson\",\n        \"dateOfBirth\": \"2006-09-18\",\n        \"gender\": \"Female\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 36,\n        \"firstName\": \"Moore\",\n        \"lastName\": \"Moore\",\n        \"dateOfBirth\": \"2005-12-09\",\n        \"gender\": \"Male\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 39,\n        \"firstName\": \"Harris\",\n        \"lastName\": \"Harris\",\n        \"dateOfBirth\": \"2005-02-16\",\n        \"gender\": \"Female\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 41,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 42,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 43,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 44,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 45,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 46,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 47,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 48,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 49,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 50,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 51,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 52,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 53,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 54,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 55,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-08\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 56,\n        \"firstName\": \"studentas\",\n        \"lastName\": \"studentas\",\n        \"dateOfBirth\": \"1987-11-05\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 57,\n        \"firstName\": \"pavarde\",\n        \"lastName\": \"pavarde\",\n        \"dateOfBirth\": \"1999-01-01\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    },\n    {\n        \"id\": 58,\n        \"firstName\": \"pavarde\",\n        \"lastName\": \"pavarde\",\n        \"dateOfBirth\": \"1999-01-01\",\n        \"gender\": \"moteris\",\n        \"schoolId\": 1\n    }\n]"
 				}
 			]
 		},
@@ -471,11 +471,11 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "121"
+							"value": "104"
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 22 Apr 2024 19:20:38 GMT"
+							"value": "Tue, 23 Apr 2024 16:09:03 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -487,7 +487,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "New school added:\nSchoolDTOOutgoing(id=13, name=Second new school added, address=Dziaugsmo gatve, Vilnius, students=null)"
+					"body": "New school added:\nSchoolDTOOutput(id=15, name=Second new school added, address=Dziaugsmo gatve, Vilnius)"
 				}
 			]
 		},
@@ -496,8 +496,17 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"firstName\": \"vardas\",\n    \"lastName\": \"pavarde\",\n    \"dateOfBirth\": \"1999-01-01\",\n    \"gender\": \"moteris\",\n    \"schoolId\": 1,\n    \"email\": \"email@test.lt\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
-					"raw": "http://localhost:8090/schools/schoolId/:schoolId",
+					"raw": "http://localhost:8090/schools/:schoolId",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -505,7 +514,6 @@
 					"port": "8090",
 					"path": [
 						"schools",
-						"schoolId",
 						":schoolId"
 					],
 					"variable": [
@@ -524,7 +532,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"id\": 41,\n    \"firstName\": \"vardas\",\n    \"lastName\": \"pavarde\",\n    \"dateOfBirth\": \"1999-01-01\",\n    \"gender\": \"moteris\",\n    \"schoolId\": 1,\n    \"email\": \"email@test.lt\"\n}",
+							"raw": "{\n    \"firstName\": \"vardas\",\n    \"lastName\": \"pavarde\",\n    \"dateOfBirth\": \"1999-01-01\",\n    \"gender\": \"moteris\",\n    \"schoolId\": 2,\n    \"email\": \"test@test.lt\",\n    \"address\": \"namai tokie\",\n    \"phoneNumber\": \"878888888\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -532,7 +540,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8090/schools/schoolId/:schoolId",
+							"raw": "http://localhost:8090/schools/:schoolId",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -540,7 +548,6 @@
 							"port": "8090",
 							"path": [
 								"schools",
-								"schoolId",
 								":schoolId"
 							],
 							"variable": [
@@ -573,11 +580,11 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "148"
+							"value": "158"
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 22 Apr 2024 19:24:45 GMT"
+							"value": "Tue, 23 Apr 2024 17:13:01 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -589,7 +596,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "New student added to school XYZ\nStudentDTOOutgoing(id=null, firstName=pavarde, lastName=pavarde, dateOfBirth=1999-01-01, gender=moteris, schoolId=1)"
+					"body": "New student added to school DTO naujas vardas2\nStudentDTOOutput(id=80, firstName=vardas, lastName=pavarde, dateOfBirth=1999-01-01, gender=moteris, schoolId=2)"
 				}
 			]
 		},
@@ -649,7 +656,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "DTO naujas vardas2",
+							"raw": "DTO naujas vardas3",
 							"options": {
 								"raw": {
 									"language": "text"
@@ -657,7 +664,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8090/schools/schoolId/:schoolId",
+							"raw": "http://localhost:8090/schools/:schoolId/name",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -665,8 +672,8 @@
 							"port": "8090",
 							"path": [
 								"schools",
-								"schoolId",
-								":schoolId"
+								":schoolId",
+								"name"
 							],
 							"variable": [
 								{
@@ -698,11 +705,11 @@
 						},
 						{
 							"key": "Content-Length",
-							"value": "60"
+							"value": "61"
 						},
 						{
 							"key": "Date",
-							"value": "Mon, 22 Apr 2024 19:32:47 GMT"
+							"value": "Tue, 23 Apr 2024 15:59:45 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -714,7 +721,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "DTO naujas vardas school name updated to: DTO naujas vardas2"
+					"body": "DTO naujas vardas2 school name updated to: DTO naujas vardas3"
 				}
 			]
 		}

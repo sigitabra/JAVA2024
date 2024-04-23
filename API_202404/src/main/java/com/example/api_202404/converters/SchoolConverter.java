@@ -1,40 +1,42 @@
 package com.example.api_202404.converters;
 
-import com.example.api_202404.dto.SchoolDTOIncoming;
-import com.example.api_202404.dto.SchoolDTOOutgoing;
+import com.example.api_202404.dto.SchoolDTOInput;
+import com.example.api_202404.dto.SchoolDTOOutput;
 import com.example.api_202404.entities.School;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class SchoolConverter {
-    public static SchoolDTOOutgoing convertEntityToDTO(School school) {
-        SchoolDTOOutgoing schoolDTOOutgoing = null;
+
+    public static SchoolDTOOutput convertEntityToDTO(School school) {
+        SchoolDTOOutput schoolDTOOutput = null;
         if (school != null) {
-            schoolDTOOutgoing = new SchoolDTOOutgoing();
-            schoolDTOOutgoing.setId(school.getId());
-            schoolDTOOutgoing.setName(school.getName());
-            schoolDTOOutgoing.setAddress(school.getAddress());
-            schoolDTOOutgoing.setStudents(StudentConverter.convertEntityListToDTO(school.getStudents()));
+            schoolDTOOutput = new SchoolDTOOutput();
+            schoolDTOOutput.setId(school.getId());
+            schoolDTOOutput.setName(school.getName());
+            schoolDTOOutput.setAddress(school.getAddress());
         }
-        return schoolDTOOutgoing;
+        return schoolDTOOutput;
     }
 
-    public static List<SchoolDTOOutgoing> convertEntityListToDTO(List<School> schools) {
-        List<SchoolDTOOutgoing> schoolDTOOutgoingList = null;
+    public static List<SchoolDTOOutput> convertEntityListToDTO(List<School> schools) {
+        List<SchoolDTOOutput> schoolDTOOutputList = null;
         if (schools != null && !schools.isEmpty()) {
-            schoolDTOOutgoingList = new ArrayList<>();
+            schoolDTOOutputList = new ArrayList<>();
             for (School school : schools) {
-                schoolDTOOutgoingList.add(convertEntityToDTO(school));
+                schoolDTOOutputList.add(convertEntityToDTO(school));
             }
         }
-        return schoolDTOOutgoingList;
+        return schoolDTOOutputList;
     }
 
-    public static School convertDTOToEntity(SchoolDTOIncoming schoolDTO) {
+    public static School convertDTOToEntity(SchoolDTOInput schoolDTO) {
         School school = null;
         if (schoolDTO != null) {
-            school = new School(schoolDTO.getName(), schoolDTO.getAddress());
+            school = new School();
+            school.setName(schoolDTO.getName());
+            school.setAddress(schoolDTO.getAddress());
         }
         return school;
     }

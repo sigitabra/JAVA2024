@@ -36,14 +36,6 @@ public class Student {
         this.id = id;
     }
 
-    public Student(String firstName, String lastName, Date dateOfBirth, String gender, Long schoolId) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.dateOfBirth = dateOfBirth;
-        this.gender = gender;
-        this.schoolId = schoolId;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

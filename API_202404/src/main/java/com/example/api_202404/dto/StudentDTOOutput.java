@@ -5,7 +5,7 @@ import lombok.Data;
 import java.sql.Date;
 
 @Data
-public class StudentDTOOutgoing {
+public class StudentDTOOutput {
     private Long id;
 
     private String firstName;
