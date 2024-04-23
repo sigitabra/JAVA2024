@@ -6,6 +6,7 @@ import com.example.api_202404.repositories.SchoolRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+
 import java.util.List;
 
 @Service
@@ -18,6 +19,7 @@ public class SchoolService {
     }
 
     public School findSchoolById(Long id) {
+
         return schoolRepository.findById(id).orElse(null);
     }
 
@@ -35,5 +37,38 @@ public class SchoolService {
         }
         return null;
 
+    }
+
+    public School addSchool(School school) {
+        try {
+            schoolRepository.saveAndFlush(school);
+        } catch (Exception e) {
+            System.out.println("ERROR: " + school.getName() + " school was not added");
+        }
+        return school;
+    }
+
+    public School addStudentToSchoolById(Long schoolId, Student student) {
+        School school = null;
+        try {
+            school = findSchoolById(schoolId);
+            school.getStudents().add(student);
+            schoolRepository.saveAndFlush(school);
+        } catch (Exception e) {
+            System.out.println("Failed to add " + student);
+        }
+        return school;
+    }
+
+    public School updateSchoolNameById(Long schoolId, String newName) {
+        School school = null;
+        try {
+            school = findSchoolById(schoolId);
+            school.setName(newName);
+            schoolRepository.saveAndFlush(school);
+        } catch (Exception e) {
+            System.out.println("Failed to update school name");
+        }
+        return school;
     }
 }
