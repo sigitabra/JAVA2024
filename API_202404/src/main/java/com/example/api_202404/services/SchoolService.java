@@ -3,7 +3,6 @@ package com.example.api_202404.services;
 import com.example.api_202404.entities.School;
 import com.example.api_202404.entities.Student;
 import com.example.api_202404.repositories.SchoolRepository;
-import com.example.api_202404.repositories.StudentRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +13,6 @@ import java.util.List;
 @RequiredArgsConstructor
 public class SchoolService {
     private final SchoolRepository schoolRepository;
-    private final StudentRepository studentRepository;
 
     public List<School> findAllSchools() {
         return schoolRepository.findAll();
@@ -50,15 +48,16 @@ public class SchoolService {
         return school;
     }
 
-    public Student addStudentToSchoolById(Long schoolId, Student student) {
+    public School addStudentToSchoolById(Long schoolId, Student student) {
+        School school = null;
         try {
-            School school = findSchoolById(schoolId);
+            school = findSchoolById(schoolId);
             school.getStudents().add(student);
-            studentRepository.saveAndFlush(student);
+            schoolRepository.saveAndFlush(school);
         } catch (Exception e) {
             System.out.println("Failed to add " + student);
         }
-        return student;
+        return school;
     }
 
     public School updateSchoolNameById(Long schoolId, String newName) {

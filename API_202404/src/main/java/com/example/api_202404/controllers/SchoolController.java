@@ -42,17 +42,17 @@ public class SchoolController {
     }
 
     @PostMapping
-    public String addSchool(@RequestBody SchoolDTOInput schoolDTOInput) {
-        return "New school added:\n" + SchoolConverter.convertEntityToDTO(schoolService.addSchool(SchoolConverter.convertDTOToEntity(schoolDTOInput)));
+    public SchoolDTOOutput addSchool(@RequestBody SchoolDTOInput schoolDTOInput) {
+        return SchoolConverter.convertEntityToDTO(schoolService.addSchool(SchoolConverter.convertDTOToEntity(schoolDTOInput)));
     }
 
-    @PostMapping(value = "/{schoolId}")
-    public String addStudentToSchoolbyId(@PathVariable Long schoolId, @RequestBody StudentDTOInput studentDTOInput) {
-        return "New student added to school " + SchoolConverter.convertEntityToDTO(schoolService.findSchoolById(schoolId)).getName() + "\n" + StudentConverter.convertEntityToDTO(this.schoolService.addStudentToSchoolById(schoolId, StudentConverter.convertDTOtoEntity(studentDTOInput)));
+    @PostMapping(value = "/{schoolId}/students")
+    public SchoolDTOOutput addStudentToSchoolById(@PathVariable Long schoolId, @RequestBody StudentDTOInput studentDTOInput) {
+        return SchoolConverter.convertEntityToDTO(this.schoolService.addStudentToSchoolById(schoolId, StudentConverter.convertDTOtoEntity(studentDTOInput)));
     }
 
     @PatchMapping(value = "/{schoolId}/name")
-    public String updateSchoolNameById(@PathVariable Long schoolId, @RequestBody String newName) {
-        return SchoolConverter.convertEntityToDTO(schoolService.findSchoolById(schoolId)).getName() + " school name updated to: " + SchoolConverter.convertEntityToDTO(this.schoolService.updateSchoolNameById(schoolId, newName)).getName();
+    public SchoolDTOOutput updateSchoolNameById(@PathVariable Long schoolId, @RequestBody String newName) {
+        return SchoolConverter.convertEntityToDTO(this.schoolService.updateSchoolNameById(schoolId, newName));
     }
 }

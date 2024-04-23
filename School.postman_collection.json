@@ -451,7 +451,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "plain",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Vary",
@@ -467,15 +467,15 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/plain;charset=UTF-8"
+							"value": "application/json"
 						},
 						{
-							"key": "Content-Length",
-							"value": "104"
+							"key": "Transfer-Encoding",
+							"value": "chunked"
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 23 Apr 2024 16:09:03 GMT"
+							"value": "Tue, 23 Apr 2024 17:53:46 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -487,7 +487,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "New school added:\nSchoolDTOOutput(id=15, name=Second new school added, address=Dziaugsmo gatve, Vilnius)"
+					"body": "{\n    \"id\": 26,\n    \"name\": \"Second new school added\",\n    \"address\": \"Dziaugsmo gatve, Vilnius\"\n}"
 				}
 			]
 		},
@@ -540,7 +540,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8090/schools/:schoolId",
+							"raw": "http://localhost:8090/schools/:schoolId/students",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -548,7 +548,8 @@
 							"port": "8090",
 							"path": [
 								"schools",
-								":schoolId"
+								":schoolId",
+								"students"
 							],
 							"variable": [
 								{
@@ -560,7 +561,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "plain",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Vary",
@@ -576,15 +577,15 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/plain;charset=UTF-8"
+							"value": "application/json"
 						},
 						{
-							"key": "Content-Length",
-							"value": "158"
+							"key": "Transfer-Encoding",
+							"value": "chunked"
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 23 Apr 2024 17:13:01 GMT"
+							"value": "Tue, 23 Apr 2024 17:54:06 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -596,7 +597,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "New student added to school DTO naujas vardas2\nStudentDTOOutput(id=80, firstName=vardas, lastName=pavarde, dateOfBirth=1999-01-01, gender=moteris, schoolId=2)"
+					"body": "{\n    \"id\": 1,\n    \"name\": \"DTO naujas vardas2\",\n    \"address\": \"123 Main St\"\n}"
 				}
 			]
 		},
@@ -685,7 +686,7 @@
 					},
 					"status": "OK",
 					"code": 200,
-					"_postman_previewlanguage": "plain",
+					"_postman_previewlanguage": "json",
 					"header": [
 						{
 							"key": "Vary",
@@ -701,15 +702,15 @@
 						},
 						{
 							"key": "Content-Type",
-							"value": "text/plain;charset=UTF-8"
+							"value": "application/json"
 						},
 						{
-							"key": "Content-Length",
-							"value": "61"
+							"key": "Transfer-Encoding",
+							"value": "chunked"
 						},
 						{
 							"key": "Date",
-							"value": "Tue, 23 Apr 2024 15:59:45 GMT"
+							"value": "Tue, 23 Apr 2024 17:54:51 GMT"
 						},
 						{
 							"key": "Keep-Alive",
@@ -721,7 +722,7 @@
 						}
 					],
 					"cookie": [],
-					"body": "DTO naujas vardas2 school name updated to: DTO naujas vardas3"
+					"body": "{\n    \"id\": 1,\n    \"name\": \"DTO naujas vardas3\",\n    \"address\": \"123 Main St\"\n}"
 				}
 			]
 		}
