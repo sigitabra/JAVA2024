@@ -2,6 +2,8 @@ package com.example.api_202404.entities;
 
 import jakarta.persistence.*;
 import lombok.*;
+import org.springframework.data.annotation.CreatedDate;
+import org.springframework.data.annotation.LastModifiedDate;
 
 import java.sql.Date;
 import java.util.Objects;
@@ -31,6 +33,12 @@ public class Student {
     private String address;
 
     private Long schoolId;
+
+    @CreatedDate
+    private Date createdAt;
+
+    @LastModifiedDate
+    private Date updatedAt;
 
     public Student(Long id) {
         this.id = id;
