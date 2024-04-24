@@ -4,6 +4,8 @@ import com.example.api_202404.dto.SchoolDTOInput;
 import com.example.api_202404.dto.SchoolDTOOutput;
 import com.example.api_202404.entities.School;
 
+import java.sql.Date;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -37,6 +39,8 @@ public class SchoolConverter {
             school = new School();
             school.setName(schoolDTO.getName());
             school.setAddress(schoolDTO.getAddress());
+            school.setCreatedAt(Date.valueOf(LocalDate.now()));
+            school.setUpdatedAt(Date.valueOf(LocalDate.now()));
         }
         return school;
     }
