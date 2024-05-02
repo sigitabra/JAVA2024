@@ -1,12 +1,9 @@
 package com.example.recipe_20240425.services;
 
-import com.example.recipe_20240425.entities.Ingredient;
 import com.example.recipe_20240425.entities.Recipe;
 import com.example.recipe_20240425.repositories.RecipeRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-
-import java.util.ArrayList;
 import java.util.List;
 
 @Service
@@ -33,20 +30,9 @@ public class RecipeService {
         recipeRepository.deleteById(id);
     }
 
-    public List<Recipe> addNewRecipe(List<Recipe> recipes) throws Exception {
+    public List<Recipe> addNewRecipe(List<Recipe> recipes) {
         if (recipes.isEmpty()) {
             return null;
-        }
-        for (Recipe recipe : recipes) {
-            List<Ingredient> ingredients = new ArrayList<>();
-            for (Ingredient ingredient : recipe.getIngredients()) {
-                Ingredient dbIngredient = ingredientService.findAllIngredientByName(ingredient.getName());
-                ingredients.add(dbIngredient);
-                if (dbIngredient == null) {
-                    throw new Exception("Ingredient not found");
-                }
-            }
-            recipe.setIngredients(ingredients);
         }
         return recipeRepository.saveAllAndFlush(recipes);
     }

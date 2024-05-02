@@ -60,10 +60,10 @@ public class IngredientController {
         }
         try {
             ingredientService.deleteIngredientById(id);
-            return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).build();
         }
-
+        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
     }
 }

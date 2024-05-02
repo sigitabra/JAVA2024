@@ -30,7 +30,7 @@ public class Recipe {
 
     private String description;
 
-    @ManyToMany(cascade = CascadeType.ALL)
+    @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private List<Ingredient> ingredients;
 
     @CreationTimestamp

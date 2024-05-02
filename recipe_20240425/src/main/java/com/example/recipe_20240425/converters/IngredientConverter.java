@@ -4,13 +4,15 @@ import com.example.recipe_20240425.dto.IngredientIn;
 import com.example.recipe_20240425.dto.IngredientOut;
 import com.example.recipe_20240425.dto.IngredientWithRecipesOut;
 import com.example.recipe_20240425.entities.Ingredient;
+import lombok.AccessLevel;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import static com.example.recipe_20240425.converters.RecipeConverter.convertEntityListToRecipeOut;
 
-
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
 public class IngredientConverter {
 
 

@@ -14,6 +14,6 @@ public class RecipeIn {
 
     private String description;
 
-    private List<IngredientIn> ingredients;
+    private List<Long> ingredientIds;
 
 }

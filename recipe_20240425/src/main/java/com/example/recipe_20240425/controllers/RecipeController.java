@@ -4,13 +4,16 @@ import com.example.recipe_20240425.converters.RecipeConverter;
 import com.example.recipe_20240425.dto.RecipeIn;
 import com.example.recipe_20240425.dto.RecipeOut;
 import com.example.recipe_20240425.dto.RecipeWithIngredientsOut;
+import com.example.recipe_20240425.entities.Ingredient;
 import com.example.recipe_20240425.entities.Recipe;
+import com.example.recipe_20240425.services.IngredientService;
 import com.example.recipe_20240425.services.RecipeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @CrossOrigin(originPatterns = "*")
@@ -19,6 +22,8 @@ import java.util.List;
 @RequestMapping(value = "/recipes")
 public class RecipeController {
     private final RecipeService recipeService;
+
+    private final IngredientService ingredientService;
 
     @GetMapping
     public ResponseEntity<List<RecipeOut>> getAllRecipes() {
@@ -35,8 +40,16 @@ public class RecipeController {
     @PostMapping
     public ResponseEntity<List<RecipeOut>> addRecipe(@RequestBody List<RecipeIn> recipesIn) {
         List<RecipeOut> body;
+        List<Recipe> recipeList = new ArrayList<>();
         try {
-            body = RecipeConverter.convertEntityListToRecipeOut(recipeService.addNewRecipe(RecipeConverter.convertRecipeInLisToEntityList(recipesIn)));
+            for (RecipeIn recipeIn : recipesIn) {
+                Recipe recipe = RecipeConverter.convertRecipeInToEntity(recipeIn);
+                List<Ingredient> ingredients = ingredientService.findIngredientByListId(recipeIn.getIngredientIds());
+                recipe.setIngredients(ingredients);
+                recipeList.add(recipe);
+            }
+
+            body = RecipeConverter.convertEntityListToRecipeWithIngredientsOut(recipeService.addNewRecipe(recipeList));
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).build();
         }
@@ -59,10 +72,11 @@ public class RecipeController {
         }
         try {
             recipeService.deleteRecipeById(id);
-            return ResponseEntity.status(HttpStatus.ACCEPTED).build();
+
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.NOT_ACCEPTABLE).build();
         }
+        return ResponseEntity.status(HttpStatus.ACCEPTED).build();
     }
 
 }
