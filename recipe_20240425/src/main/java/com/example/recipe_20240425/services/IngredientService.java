@@ -33,12 +33,16 @@ public class IngredientService {
         ingredientRepository.deleteById(id);
     }
 
+    public Ingredient findAllIngredientByName(String name) {
+        return ingredientRepository.findByName(name);
+    }
+
     public List<Ingredient> addNewIngredient(List<Ingredient> ingredients) {
         if (ingredients.isEmpty()) {
             return null;
         }
         for (Ingredient ingredient : ingredients) {
-            Ingredient dbIngredient = ingredientRepository.findByName(ingredient.getName());
+            Ingredient dbIngredient = findAllIngredientByName(ingredient.getName());
             if (dbIngredient == null) {
                 ingredientRepository.saveAndFlush(ingredient);
             } else {

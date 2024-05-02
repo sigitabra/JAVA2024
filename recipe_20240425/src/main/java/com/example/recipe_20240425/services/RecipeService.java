@@ -40,7 +40,7 @@ public class RecipeService {
         for (Recipe recipe : recipes) {
             List<Ingredient> ingredients = new ArrayList<>();
             for (Ingredient ingredient : recipe.getIngredients()) {
-                Ingredient dbIngredient = ingredientService.getIngredientRepository().findByName(ingredient.getName());
+                Ingredient dbIngredient = ingredientService.findAllIngredientByName(ingredient.getName());
                 ingredients.add(dbIngredient);
                 if (dbIngredient == null) {
                     throw new Exception("Ingredient not found");
