@@ -9,6 +9,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.OneToMany;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.ToString;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedDate;
 
@@ -38,4 +39,16 @@ public class School {
 
     @LastModifiedDate
     private Date updatedAt;
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "createdAt=" + createdAt +
+                ", updatedAt=" + updatedAt +
+                ", phoneNo='" + phoneNo + '\'' +
+                ", address='" + address + '\'' +
+                ", title='" + title + '\'' +
+                ", id=" + id +
+                '}';
+    }
 }
