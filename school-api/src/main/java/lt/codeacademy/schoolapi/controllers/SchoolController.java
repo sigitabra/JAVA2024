@@ -40,11 +40,12 @@ public class SchoolController {
     @GetMapping
     public ResponseEntity<List<GetSchoolResponse>> getAllSchools() {
         List<School> schools = this.schoolService.getAllSchools();
-
+        log.info("Request getAllSchools received");
         if (schools.isEmpty()) {
+            log.info("Database contains no schools");
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         }
-
+        log.info("School list posted");
         return ResponseEntity.status(HttpStatus.OK).body(SchoolConverter.convertSchoolEntityListToGetResponse(schools));
     }
 
@@ -53,6 +54,7 @@ public class SchoolController {
         log.info("Request addSchool received");
         log.debug("Adding new school: {}", createSchoolRequest);
         if (bindingResult.hasErrors()) {
+            log.warn("Validation error for POST addSchool: {}", bindingResult.getFieldErrors());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ValidationError (bindingResult.getFieldErrors()));
         }
         CreateSchoolResponse responseBody =
@@ -68,6 +70,7 @@ public class SchoolController {
         log.debug("Get school by id: {}", schoolId);
         School school = this.schoolService.getSchoolById(schoolId);
         if (school == null) {
+            log.info("School not found by id: {}", schoolId);
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
         log.info("School posted");
@@ -81,15 +84,16 @@ public class SchoolController {
         log.info("Request patchSchoolByIdName received");
         log.debug("School id: {}", schoolId);
         if (bindingResult.hasErrors()) {
+            log.warn("Validation error for PATCH patchSchoolByIdName {}", bindingResult.getFieldErrors());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(bindingResult.getFieldErrors());
         }
         School school = this.schoolService.patchSchoolByIdTitle(schoolId, newTitle);
         if (school == null) {
+            log.info("School not found by id for updating name: {}", schoolId);
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
         log.info("School name changed");
         log.debug("New school name: {}", school);
-
         return ResponseEntity.ok(SchoolConverter.convertSchoolEntityToGetResponse(school));
     }
 
@@ -99,10 +103,12 @@ public class SchoolController {
         log.debug("Students of school id: {}", schoolId);
         List<Student> students = this.schoolService.getAllStudentsBySchoolId(schoolId);
         if (students == null) {
+            log.info("Students not found by school id: {}", schoolId);
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
 
         if (students.isEmpty()) {
+            log.info("School does not have students: {}", schoolId);
             return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
         }
         log.info("Students posted");
@@ -115,10 +121,12 @@ public class SchoolController {
         log.info("Request addStudentToSchoolById received");
         log.debug("Post new students to school: {}", schoolId);
         if (bindingResult.hasErrors()) {
+            log.warn("Validation error for POST addStudentToSchoolById {}", bindingResult.getFieldErrors());
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(new ValidationError (bindingResult.getFieldErrors()));
         }
         School school = this.schoolService.addStudentToSchoolBySchoolId(schoolId, createStudentRequest);
         if (school == null) {
+            log.info("School not found by id for adding students: {}", schoolId);
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
         log.info("Student added to school");
@@ -134,6 +142,7 @@ public class SchoolController {
         Student student = this.schoolService.getStudentBySchoolIdAndStudentId(schoolId, studentId);
 
         if (student == null) {
+            log.info("Student not found by school id : {} and by student id {}", schoolId,studentId);
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
         log.info("Selected student posted from selected school");
