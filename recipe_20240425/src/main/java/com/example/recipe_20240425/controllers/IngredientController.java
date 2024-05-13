@@ -10,6 +10,7 @@ import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
@@ -23,6 +24,7 @@ public class IngredientController {
 
     private final IngredientService ingredientService;
 
+    @PreAuthorize("hasAnyRole('CHEF', 'ASSISTANT')")
     @GetMapping
     public ResponseEntity<List<IngredientOut>> getAllIngredients() {
         List<Ingredient> ingredientList = ingredientService.findAllIngredients();
@@ -35,6 +37,7 @@ public class IngredientController {
         return ResponseEntity.ok(IngredientConverter.convertEntityListToIngredientOutList(ingredientList));
     }
 
+    @PreAuthorize("hasAnyRole('CHEF', 'ASSISTANT')")
     @PostMapping
     public ResponseEntity<List<IngredientOut>> addIngredient(@Valid @RequestBody List<IngredientIn> ingredientsIn, BindingResult bindingResult) {
         List<IngredientOut> body;
@@ -50,6 +53,7 @@ public class IngredientController {
         return ResponseEntity.status(HttpStatus.CREATED).body(body);
     }
 
+    @PreAuthorize("hasAnyRole('CHEF', 'ASSISTANT')")
     @GetMapping(value = "/{id}")
     public ResponseEntity<IngredientWithRecipesOut> getIngredientById(@PathVariable Long id) {
         Ingredient ingredient = ingredientService.findAllIngredientById(id);
@@ -59,6 +63,7 @@ public class IngredientController {
         return ResponseEntity.ok(IngredientConverter.convertEntityToIngredientWithRecipesOut(ingredient));
     }
 
+    @PreAuthorize("hasAnyRole('CHEF')")
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Void> deleteIngredientById(@PathVariable Long id) {
         if (ingredientService.findAllIngredientById(id) == null) {

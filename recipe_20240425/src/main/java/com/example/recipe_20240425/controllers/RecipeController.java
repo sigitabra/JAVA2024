@@ -11,6 +11,7 @@ import com.example.recipe_20240425.services.RecipeService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -25,6 +26,7 @@ public class RecipeController {
 
     private final IngredientService ingredientService;
 
+    @PreAuthorize("hasAnyRole('CHEF', 'USER')")
     @GetMapping
     public ResponseEntity<List<RecipeOut>> getAllRecipes() {
         List<Recipe> recipeList = recipeService.findAllRecipes();
@@ -37,6 +39,7 @@ public class RecipeController {
         return ResponseEntity.ok(RecipeConverter.convertEntityListToRecipeOut(recipeList));
     }
 
+    @PreAuthorize("hasAnyRole('CHEF')")
     @PostMapping
     public ResponseEntity<List<RecipeOut>> addRecipe(@RequestBody List<RecipeIn> recipesIn) {
         List<RecipeOut> body;
@@ -56,6 +59,7 @@ public class RecipeController {
         return ResponseEntity.status(HttpStatus.CREATED).body(body);
     }
 
+    @PreAuthorize("hasAnyRole('CHEF', 'USER')")
     @GetMapping(value = "/{id}")
     public ResponseEntity<RecipeWithIngredientsOut> getRecipeById(@PathVariable Long id) {
         Recipe recipe = recipeService.findAllRecipeById(id);
@@ -65,6 +69,7 @@ public class RecipeController {
         return ResponseEntity.ok(RecipeConverter.convertEntityToRecipeWithIngredientsOut(recipe));
     }
 
+    @PreAuthorize("hasAnyRole('CHEF')")
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Void> deleteRecipeById(@PathVariable Long id) {
         if (recipeService.findAllRecipeById(id) == null) {

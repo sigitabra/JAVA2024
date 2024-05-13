@@ -11,7 +11,7 @@ public class IngredientIn {
     @NotBlank
     @Size(min = 1, max = 255)
     private String name;
-    @NotBlank
+    
     private IngredientCategory category;
 
 }
