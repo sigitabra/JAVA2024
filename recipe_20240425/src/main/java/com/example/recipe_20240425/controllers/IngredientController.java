@@ -6,9 +6,11 @@ import com.example.recipe_20240425.dto.IngredientOut;
 import com.example.recipe_20240425.dto.IngredientWithRecipesOut;
 import com.example.recipe_20240425.entities.Ingredient;
 import com.example.recipe_20240425.services.IngredientService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -34,8 +36,12 @@ public class IngredientController {
     }
 
     @PostMapping
-    public ResponseEntity<List<IngredientOut>> addIngredient(@RequestBody List<IngredientIn> ingredientsIn) {
+    public ResponseEntity<List<IngredientOut>> addIngredient(@Valid @RequestBody List<IngredientIn> ingredientsIn, BindingResult bindingResult) {
         List<IngredientOut> body;
+        if (bindingResult.hasErrors()){
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
+        }
+
         try {
             body = IngredientConverter.convertEntityListToIngredientOutList(ingredientService.addNewIngredient(IngredientConverter.convertIngredientInLitsToEntityList(ingredientsIn)));
         } catch (Exception e) {
